@@ -10,6 +10,8 @@ terraform {
     bucket = "engdevopsb05state"
     key    = "engdevops05.tfstate"
     region = "us-east-1"
+    dynamodb_table = "engdevops05statelocking"
+    encrypt = true
   }
 }
 
